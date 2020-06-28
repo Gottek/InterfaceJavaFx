@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="20.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('Assets/hospital-background.jpg')" vgap="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Connection.ConnectionController">
+   <TextField fx:id="nomField" prefWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+   <Label text="Prénom" textFill="#ea00ff" GridPane.columnIndex="0" GridPane.rowIndex="1">
+      <font>
+         <Font name="System Bold Italic" size="24.0" />
+      </font></Label>
+   <TextField fx:id="prenomField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   
+   <Label text="Nom" textFill="#df00ff" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <font>
+         <Font name="System Bold Italic" size="24.0" />
+      </font></Label>
+   <Button fx:id="validateConnexion" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Valider" textAlignment="CENTER" textFill="#cb0aff" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+      <font>
+         <Font name="Yu Gothic Bold" size="20.0" />
+      </font></Button>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

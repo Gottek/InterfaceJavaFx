@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<DialogPane fx:id="GamersDialogue" prefWidth="900.0" fx:controller="OtherGamers.OtherGamerController"
+            xmlns:fx="http://javafx.com/fxml" >
+    <content>
+        <TableView fx:id="GamerTable" >
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns >
+                <TableColumn text="Nom" >
+                    <cellValueFactory >
+                        <PropertyValueFactory property="nom"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Prenom">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="prenom"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Docteurs">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nbDoctors"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Masques">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nbMask"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Lits">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nbBed"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Infectées">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nbInfected"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Guerris">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nbCured"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Médicaments">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nbDrugs"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Argents">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nbMoney"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Score">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="score"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </content>
+</DialogPane>
